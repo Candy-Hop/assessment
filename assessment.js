@@ -39,9 +39,11 @@ assessmentButton.onclick = () => {
   resultDivided.setAttribute('class','card');
   resultDivided.setAttribute('style','max-width: 700px;')
   
-  //headerDivided
+  //headerDivided と bodyDivided を resultDivided に差し込む
+  resultDivided.appendChild(headerDivided);
+  resultDivided.appendChild(bodyDivided);
 
-  // TODO ツイートエリアの作成
+  // ツイートエリアの作成
   tweetDivided.innerText = '';
   const anchor = document.createElement('a');
   const hrefValue =
